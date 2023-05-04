@@ -793,6 +793,9 @@ footer .wrapper{
   flex-direction: column;
   align-items: center;
 }
+.maingRightContentSectionTop img {
+    width: 65px;
+}
 
 
 @media (max-width: 1500px) {
@@ -810,6 +813,9 @@ footer .wrapper{
     padding: 30px 32px;
     box-sizing: border-box;
   }
+  .maingRightContentSectionTop img {
+    width: 65px;
+}
   .mainLeftContent {
     width: 62%;
   }
@@ -856,6 +862,12 @@ footer .wrapper{
     position: relative;
     z-index: 10;
   }
+  .maingRightContentSectionTop img {
+    width: 65px;
+}
+.maingRightContentSectionTop img:nth-of-type(2) {
+  margin-right: 20px;
+}
 }
 
 @media (max-width: 992px) {
@@ -866,6 +878,8 @@ footer .wrapper{
     height: 130px;
     flex-direction: column;
     position: relative;
+  }.maingRightContentSectionTop img:nth-of-type(2) {
+    margin-right: 10px;
   }
   .cardRight {
     position: absolute;
