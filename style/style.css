@@ -1238,12 +1238,27 @@ height: 18px;
   .maingRightContent {
     display: none;
   }
+  .maingRightContentSectionTop > div img {
+    width: 19px;
+    height: 19px;
+  }
+  .maingRightContentSectionTop > div p {
+    margin-left: 8px;
+    font-size: 12px;
+line-height: 15px;
+  }
+  .maingRightContentSection > p {
+    margin-top: 5px;
+  }
   .maingRightContentSectionCard {
     display: block;
   }
   .mainLeftContent {
    width: 100%;
    margin-right: 0;
+  }
+  .maingRightContentSectionTop > div {
+    flex-direction: row;
   }
   .my-rating-3 {
     margin-left: 4px;
