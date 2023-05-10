@@ -189,6 +189,8 @@ font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     margin-bottom: 3px;
+    height: 14px;
+    margin: 5px 0 3px 0;
 }
 .starContainer > p {
     font-family: 'Inter', sans-serif;
@@ -196,6 +198,7 @@ font-family: 'Montserrat', sans-serif;
     font-size: 8px;
     line-height: 10px;
     color: #000000;
+    margin-left: 4px;
 }
 .starContainer > img {
     width: 67px;
@@ -821,6 +824,227 @@ footer .wrapper{
 .maingRightContentSectionCard {
   display: none;
 }
+
+
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #DCF3FF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: none;
+}
+
+.popup.show {
+  display: block;
+}
+.sums {
+  text-align: left !important;
+}
+
+.popup-content {
+  
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.popup-content p {
+  text-align: left;
+  line-height: 130%;
+  padding-right: 20px;
+}
+.close-btn {
+  background: #296599;
+  color: #DCF3FF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.modalWindow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0; 
+  pointer-events: none; 
+  transition: 0.5s all;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalWindow.active { 
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.modalWindowContent {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 30px 20px;
+  width: 300px;
+  transition: 0.5s all;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.popupScroll {
+  overflow-y: scroll;
+  height: 100%; 
+}
+.popup.active { 
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+.close-popup {
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.modalForm {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0; 
+  pointer-events: none; 
+  transition: 0.5s all;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalForm h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #296599;
+  margin-bottom: 30px;
+  margin-top: 30px
+}
+.modalForm.active { 
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.modalFormContent {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 30px 20px;
+  width: 300px;
+  transition: 0.5s all;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+.modalFormContent-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.modalFormRecap {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.modalFormRecap img{
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.modalWindowContent h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #296599;
+  margin-bottom: 30px;
+  margin-top: 30px
+}
+.modalFormContainer form input {
+  width: 100%;
+  background: #FFFFFF;
+  border: 2px solid #CEDEFB;
+  border-radius: 4px;
+  height: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+.modalWindowContent form input{
+  width: 100%;
+  background: #FFFFFF;
+  border: 2px solid #CEDEFB;
+  border-radius: 4px;
+  height: auto;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+.body.active {
+  overflow: hidden;
+}
+.recapcha {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.jq-star {
+  width: 14px !important;
+  height: 14px !important;
+  position: relative;
+}
+.jq-star-svg {
+  position: absolute;
+  width: 14px !important;
+  height: 14px !important;
+  padding: 0;
+}
+.recapcha img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+.modalWindowContent form input:nth-of-type(2) {
+  background: #296599;
+  color: #DCF3FF;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: auto;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1500px) {
   .headerBottom:after {
     left: 15%;
@@ -995,6 +1219,9 @@ height: 18px;
    width: 100%;
    margin-right: 0;
   }
+  .my-rating-3 {
+    margin-left: 4px;
+  }
   .headerBottomContent h1 {
     font-size: 14px;
     line-height: 20px;
@@ -1013,6 +1240,13 @@ height: 18px;
     top: 45%;
     width: 42px;
     right: 10px;
+  }
+  .popup-content {
+    flex-direction: column;
+  }
+  .popup-content p {
+    font-size: 10px;
+    line-height: 18px;
   }
   .headerTop {
     height: 37px;

@@ -8,12 +8,60 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@500&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+       <link rel="stylesheet" href="style/star-rating-svg.css">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <title>Document</title>
 </head>
 
-<body>
+<body class="body">
+
+    <div class="popup">
+        <div class="popup-content">
+          <p>Для улучшения работы сайта и взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете использование cookie-файлов и соглашаетесь на сбор, обработку и передачу личных данных. Подробнее Вы всегда можете отключить файлы cookie в настройках.</p>
+          <button class="close-btn">Принять</button>
+        </div>
+    </div>    
+    
+    <div class="modalWindow"> 
+        <div class="modalWindowContent">
+            <div class="popupScroll">
+                <svg class="close-popup" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#222222"/>
+                </svg>   
+            </div>
+            <h2>Заблокировать <br> номер</h2>
+            <form action="">
+                <input type="tel">
+                <div class="recapcha">
+                    <img src="img/recImg.png" alt="">
+                </div>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+    </div> 
+
+    <div class="modalForm">
+        <div class="modalFormContent">
+            <div>
+                <svg class="modalFormContent-close" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#222222"/>
+                </svg>   
+            </div>
+            <div class="modalFormContainer">
+                <h2>Заполните заявку</h2>
+                <form action="">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <div class="modalFormRecap">
+                        <img src="img/recImg.png" alt="">
+                    </div>
+                    <input type="submit" class="modalFormSubmit" value="Отправить">
+                </form>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="headerTop">
         </div>
@@ -69,9 +117,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating1">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-1"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -116,9 +164,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating2">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-2"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -162,9 +210,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating3">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-3"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -208,9 +256,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating4">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-4"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -255,9 +303,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating5">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-5"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -278,7 +326,7 @@
                     Отправьте заявку сразу на несколько компаний!</p>
             </div>
 
-            <section class="card ">
+            <section class="card">
                 <div class="cardLeft">
                     <img src="img/credit.png" alt="">
                 </div>
@@ -314,9 +362,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating6">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-6"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -360,9 +408,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating7">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-7"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -406,9 +454,9 @@
                 </div>
                 <div class="cardRight">
                     <div class="cardRightFlex">
-                        <p>4.5</p>
+                        <p class="live-rating8">5</p>
                         <div class="starContainer">
-                            <img src="img/star.svg" alt="">
+                            <span class="my-rating-8"></span>
                             <p>5 отзывов</p>
                         </div>
                     </div>
@@ -426,7 +474,7 @@
         <div class="maingRightContent">
             <div class="maingRightContentSection">
                 <h2>Сколько вы бы хотели <br> занять?</h2>
-                <p>Необходимая сума</p>
+                <p class="sums">Необходимая сума</p>
                 <form action="">
                     <input type="range" min="0" max="5000" step="100" value="0" id="myRange">
                     <p><span id="demo"></span> ₸</p>
@@ -513,7 +561,7 @@
                     </div>
                 </div>
             </div>
-            <button>Заполнить заявку</button>
+            <button class="modalFormContent-open">Заполнить заявку</button>
         </div>
     </section>
 
@@ -647,11 +695,18 @@
             </div>
             <div class="footerBottom">
                 <p>Если вы больше не желаете получать рассылку от нас, нажмите кнопку ниже</p>
-                <button>Заблокировать номер</button>
+                <button class="open-popup">Заблокировать номер</button>
             </div>
         </div>
     </footer>
 
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="script/jquery.star-rating-svg.js"> </script>
+
+    <script src="script/popap.js"></script>
+    <script src="script/star-rating.js"></script>
 
     <script>
         const range = document.getElementById("myRange");
@@ -671,6 +726,53 @@
         updateProgress();
 
     </script>
+
+<script>
+    let popupBg = document.querySelector('.modalWindow'); 
+    let popup1 = document.querySelector('.modalWindowContent'); 
+    let openPopupButtons = document.querySelectorAll('.openPopupButtons');
+    let closePopupButton = document.querySelector('.closePopupButton'); 
+    let body = document.querySelector('.body'); 
+
+    openPopupButtons.forEach((button) => { 
+        button.addEventListener('click', (e) => { 
+            e.preventDefault(); 
+            popupBg.classList.add('active'); 
+            popup1.classList.add('active');
+            body.classList.add('active');
+        })
+    });
+    closePopupButton.addEventListener('click',() => { 
+        popupBg.classList.remove('active'); 
+        popup1.classList.remove('active'); 
+        body.classList.remove('active');
+    });
+</script>
+
+
+
+<script>
+    let modalForm = document.querySelector('.modalForm'); 
+    let modalFormContent = document.querySelector('.modalFormContent'); 
+    let modalFormContentOpen = document.querySelectorAll('.modalFormContent-open');
+    let modalFormContentClose = document.querySelector('.modalFormContent-close'); 
+    let body1 = document.querySelector('.body'); 
+
+    modalFormContentOpen.forEach((button) => { 
+        button.addEventListener('click', (e) => { 
+            e.preventDefault(); 
+            modalForm.classList.add('active'); 
+            modalFormContent.classList.add('active');
+            body1.classList.add('active');
+        })
+    });
+    modalFormContentClose.addEventListener('click',() => { 
+        modalForm.classList.remove('active'); 
+        modalFormContent.classList.remove('active'); 
+        body1.classList.remove('active');
+    });
+</script>
+
 </body>
 
 </html>
