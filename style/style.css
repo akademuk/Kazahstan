@@ -1528,9 +1528,10 @@ margin-bottom: 20px;
     padding: 0;
   }
   .footerLogo a img {
-    width: 53px;
-    height: 15px;
+    width: 80px;
+    height: 20px;
     object-fit: contain;
+    margin-top: 4px;
   }
   .contentText2 ul{
     margin: 20px 0;
