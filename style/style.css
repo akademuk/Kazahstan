@@ -712,6 +712,10 @@ footer .wrapper{
   color: #FFFFFF;
   margin-bottom: 7px;
 }
+.footerLogoSocialFlex {
+  display: flex;
+  align-items: center;
+}
 .footerLogoSocialFlex a:nth-of-type(1) {
   margin-right: 16px;
 }
@@ -993,6 +997,17 @@ footer .wrapper{
   margin-bottom: 20px;
   box-sizing: border-box;
   padding: 10px 20px;
+}
+.viber {
+  display: flex;
+  width: 25px;
+  height: 28px;
+}
+.viber img {
+  width: 100%;
+  object-fit: contain;
+  height: 100%;
+  max-width: 100%;
 }
 .body.active {
   overflow: hidden;
@@ -1558,7 +1573,7 @@ margin-bottom: 20px;
     width: 80px;
   }
   .footerLogo a img {
-    width: 100%;
+    width: 100px;
   }
   .footerTopCard {
     margin-left: 0;
