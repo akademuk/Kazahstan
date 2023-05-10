@@ -963,11 +963,13 @@ footer .wrapper{
 .modalFormRecap {
   width: 100%;
   margin-bottom: 20px;
+  height: 50px;
 }
 .modalFormRecap img{
   width: 100%;
-  object-fit: cover;
+  object-fit: unset;
   max-width: 100%;
+  height: 100%;
 }
 .modalWindowContent h2 {
   font-weight: 600;
@@ -1016,7 +1018,7 @@ footer .wrapper{
 .modalFormSubmit {
   background: #296599 !important;
   color: #DCF3FF !important;
-  border: none;
+  border: none !important;
   border-radius: 4px;
   padding: 10px 20px;
   cursor: pointer;
