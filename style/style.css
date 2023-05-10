@@ -973,6 +973,7 @@ footer .wrapper{
   margin-bottom: 30px;
   margin-top: 30px
 }
+
 .modalFormContainer form input {
   width: 100%;
   background: #FFFFFF;
@@ -995,6 +996,16 @@ footer .wrapper{
 }
 .body.active {
   overflow: hidden;
+}
+.modalFormSubmit {
+  background: #296599 !important;
+  color: #DCF3FF !important;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: auto;
+  box-sizing: border-box;
 }
 .recapcha {
   width: 100%;

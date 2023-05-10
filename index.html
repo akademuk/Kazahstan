@@ -702,11 +702,12 @@
 
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script src="script/jquery.star-rating-svg.js"> </script>
 
     <script src="script/popap.js"></script>
     <script src="script/star-rating.js"></script>
+    <script src="script/modalForm.js"></script>
 
     <script>
         const range = document.getElementById("myRange");
@@ -730,8 +731,8 @@
 <script>
     let popupBg = document.querySelector('.modalWindow'); 
     let popup1 = document.querySelector('.modalWindowContent'); 
-    let openPopupButtons = document.querySelectorAll('.openPopupButtons');
-    let closePopupButton = document.querySelector('.closePopupButton'); 
+    let openPopupButtons = document.querySelectorAll('.open-popup');
+    let closePopupButton = document.querySelector('.close-popup'); 
     let body = document.querySelector('.body'); 
 
     openPopupButtons.forEach((button) => { 
@@ -751,27 +752,7 @@
 
 
 
-<script>
-    let modalForm = document.querySelector('.modalForm'); 
-    let modalFormContent = document.querySelector('.modalFormContent'); 
-    let modalFormContentOpen = document.querySelectorAll('.modalFormContent-open');
-    let modalFormContentClose = document.querySelector('.modalFormContent-close'); 
-    let body1 = document.querySelector('.body'); 
 
-    modalFormContentOpen.forEach((button) => { 
-        button.addEventListener('click', (e) => { 
-            e.preventDefault(); 
-            modalForm.classList.add('active'); 
-            modalFormContent.classList.add('active');
-            body1.classList.add('active');
-        })
-    });
-    modalFormContentClose.addEventListener('click',() => { 
-        modalForm.classList.remove('active'); 
-        modalFormContent.classList.remove('active'); 
-        body1.classList.remove('active');
-    });
-</script>
 
 </body>
 
