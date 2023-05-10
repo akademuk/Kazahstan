@@ -1519,8 +1519,18 @@ margin-bottom: 20px;
     border: 1px solid #FF7474;
   }
   .footerLogo a {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     box-sizing: border-box;
+    padding: 0;
+  }
+  .footerLogo a img {
+    width: 53px;
+    height: 15px;
+    object-fit: contain;
   }
   .contentText2 ul{
     margin: 20px 0;
