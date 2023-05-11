@@ -37,7 +37,7 @@
             </div>
             <h2>Заблокировать <br> номер</h2>
             <form action="">
-                <input type="tel" placeholder="Телефон">
+                <input type="tel" id="phone" name="phone" placeholder="+38 (___) ___-__-__" required>
                 <div class="recapcha">
                     <img src="img/recImg.png" alt="">
                 </div>
@@ -59,8 +59,8 @@
             <div class="modalFormContainer">
                 <h2>Заполните заявку</h2>
                 <form action="">
-                    <input type="text" placeholder="Имя">
-                    <input type="tel" placeholder="Телефон">
+                    <input type="text" maxlength="15" name="first_name" pattern="[A-Za-z]" required placeholder="Имя">
+                    <input type="tel" id="phone2" name="phone" placeholder="+38 (___) ___-__-__" required>
                     <div class="modalFormRecap">
                         <img src="img/recImg.png" alt="">
                     </div>
@@ -714,6 +714,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.2.min.js" crossorigin="anonymous"></script>
     <script src="script/jquery.star-rating-svg.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
 
     <script src="script/popap.js"></script>
     <script src="script/star-rating.js"></script>
@@ -739,6 +740,17 @@
 
     </script>
 
+
+    <script>
+        // Выбираем поле ввода телефона по его ID
+            const phoneInput = document.querySelector('#phone');
+            const phoneInput2 = document.querySelector('#phone2');
+
+            // Инициализируем маску для телефона, используя библиотеку Inputmask
+            Inputmask({mask: '+38 (999) 999-99-99'}).mask(phoneInput);
+            Inputmask({mask: '+38 (999) 999-99-99'}).mask(phoneInput2);
+
+    </script>
 
 
 
