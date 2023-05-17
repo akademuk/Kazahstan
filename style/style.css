@@ -1350,7 +1350,9 @@ footer .wrapper {
 .politicModal.active {
   display: flex !important;
 }
-
+#politicModal .modalWindowContent  {
+  padding-bottom: 50px;
+}
 .politicModal h2 {
   font-weight: 600;
   font-size: 30px;
@@ -1359,6 +1361,24 @@ footer .wrapper {
   color: #296599;
   margin-bottom: 30px;
   margin-top: 30px
+}
+.politicScroll {
+  height: 100%;
+  overflow: scroll;
+  padding-right: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000000;
+}
+.politicScrollText {
+  padding: 0 50px;
+  height: 100%;
+}
+.politicScroll b {
+  font-weight: 600;
 }
 
 
@@ -1791,6 +1811,13 @@ footer .wrapper {
   }
   .cardRight {
     right: 10px;
+  }
+  #politicModal .modalWindowContent {
+    height: 462px;
+    padding-bottom: 20px;
+  }
+  .politicScrollText {
+    padding: 0;
   }
   .headerBottomContent h1 {
     font-size: 20px;
