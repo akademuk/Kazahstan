@@ -1382,7 +1382,7 @@ footer .wrapper {
 }
 
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .mainLeftContent {
       width: 688px;
       margin-right: 0;
@@ -1567,7 +1567,7 @@ footer .wrapper {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .card {
     width: 382px;
     height: 460px;
