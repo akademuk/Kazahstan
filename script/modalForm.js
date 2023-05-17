@@ -1,7 +1,7 @@
 let modalForm = document.querySelector('.modalForm'); 
-let modalFormContent = document.querySelector('.modalFormContent'); 
+let modalFormContent = document.querySelector('.modalFormContent2'); 
 let modalFormContentOpen = document.querySelectorAll('.modalFormContent-open');
-let modalFormContentClose = document.querySelector('.modalFormContent-close'); 
+let modalFormContentClose = document.querySelector('.close-popup2'); 
 let body1 = document.querySelector('.body'); 
 
 modalFormContentOpen.forEach((button) => { 
