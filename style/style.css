@@ -1992,6 +1992,10 @@ line-height: 112%;
   .cardCenterContent {
     height: 287px;
   }
+  .card::before {
+    top: 0.5%;
+    height: 99%;
+  }
   .cardLeft {
     height: 100px;
   }
