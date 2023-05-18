@@ -49,6 +49,7 @@ body {
 }
 
 .headerBottomContent h1 {
+  font-family: 'Jost', sans-serif;
   font-weight: 600;
   font-size: 25px;
   line-height: 36px;
@@ -106,7 +107,7 @@ body {
   display: flex;
   align-items: flex-start;
   max-width: 1120px;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
 }
 
 .mainLeftContent {
@@ -147,6 +148,7 @@ body {
   padding: 8px 20px 30px 8px;
   box-sizing: border-box;
   height: 147px;
+  border-radius: 0 0 5px 5px;
 }
 
 .cardLeft {
@@ -297,19 +299,19 @@ body {
 .card::before {
   content: "";
   position: absolute;
-  top: 3%;
+  top: 2%;
   left: 0.5%;
   right: 0.5%;
   bottom: 1%;
   border-radius: 30px 5px 5px 5px;
   z-index: -1;
   width: 99%;
-  height: 94%;
+  height: 96%;
   background: #fff;
 }
 
 .maingRightContentSection {
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
   background: #FFFFFF;
   border-radius: 5px;
   margin-bottom: 40px;
@@ -729,7 +731,7 @@ line-height: 15px;
 
 .instructionBlock h3 {
   font-weight: 600;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 30px;
   color: #000000;
 }
@@ -768,7 +770,7 @@ line-height: 15px;
 .content {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 60px 0 100px 0;
+  padding: 60px 0 50px 0;
 }
 
 .content h2 {
@@ -1380,6 +1382,9 @@ footer .wrapper {
 .politicScroll b {
   font-weight: 600;
 }
+.maingRightContentSection {
+  border-radius: 20px;
+}
 
 
 @media (max-width: 1279px) {
@@ -1564,6 +1569,23 @@ footer .wrapper {
   }
   .modalWindowContent {
     width: 90%;
+  }
+  .card {
+    border-radius: 75px 5px 5px 5px;
+  }
+  .card::before {
+    border-radius: 75px 5px 5px 5px;
+    left: 0.75%;
+    right: 0.75%;
+    width: 98.5%;
+    height: 98%;
+    top: 1%;
+  }
+  .banner {
+    margin-bottom: 35px;
+  }
+  .content {
+    padding-bottom: 10px;
   }
 }
 
@@ -1783,6 +1805,25 @@ footer .wrapper {
   .cardCenterContentBlock {
     flex-direction: column;
   }
+  .headerBottom {
+    height: 70px;
+  }
+  h1 {
+    font-size: 20px;
+line-height: 112%;
+  }
+  .headerTop {
+    height: 72px;
+  }
+  .card {
+    border-radius: 50px 5px 5px 5px;
+  }
+  .card::before {
+    border-radius: 50px 5px 5px 5px;
+  }
+  .footerTopCard {
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: 412px) {
@@ -1916,6 +1957,50 @@ line-height: 112%;
   }
   .modalWindowContent form input:nth-of-type(2) {
     margin-bottom: 0;
+  }
+  .modalFormContent-open {
+    width: 262px;
+    box-sizing: border-box;
+    max-width: 262px;
+    height: 58px;
+  }
+  .banner {
+    padding-top: 19px;
+  }
+  .cardRight button {
+    height: 58px;
+  }
+  .instruction .wrapper button {
+    width: 243px;
+  }
+  .footerBottom p {
+    width: 100%;
+    font-size: 10px;
+  }
+  .footerLogo {
+    padding: 0 10px;
+  }
+  .politic  {
+    line-height: 30px;
+  }
+  .modalWindowContent h2 {
+    width: 100%;
+  }
+  .modalWindowContent p {
+    width: 100%;
+  }
+  .cardCenterContent {
+    height: 287px;
+  }
+  .cardLeft {
+    height: 100px;
+  }
+  .popup-content {
+    flex-direction: column;
+  }
+  .popup-content p {
+    padding-right: 0;
+    margin-bottom: 10px;
   }
 }
 
