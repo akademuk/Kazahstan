@@ -30,13 +30,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../img/headerTop.png);
+  background-image: url(../img/banner.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #DCF3FF;
-  background-size: cover;
+  background-size: auto;
   height: 97px;
   width: 100%;
+  position: relative;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  transform: translateX(78%);
+}
+
+.header-navigation li {
+  padding: 0 15px;
+}
+
+.header-navigation li a {
+  color: #296599;
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.5s;
+}
+
+.logo-header {
+  position: absolute;
+  top: 27px;
+  transform: translateX(-292%);
+}
+
+.header-navigation li a:hover {
+  color: #FEB300;
 }
 
 .headerBottom {
@@ -57,12 +91,54 @@ body {
   color: #296599;
 }
 
+.footerContact {
+  width: 215px;
+}
+
+.footerContact p {
+  color: #FFF;
+  height: 30px;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.9%;
+}
+
 .headerBottomContent p {
   font-weight: 500;
   font-size: 15px;
   line-height: 18px;
   text-align: center;
   color: #296599;
+}
+
+.footerContact ul li {
+  margin-bottom: 12px;
+}
+
+.footerContact ul li:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.footerContact ul li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footerContact ul li a span {
+  color: #FFF;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.5px;
+  text-decoration: none;
+}
+
+.footerTop {
+  justify-content: space-between;
 }
 
 .headerBottomIcon {
@@ -134,6 +210,7 @@ body {
   background: linear-gradient(0deg, rgba(62, 243, 255, 1) 0%, rgba(170, 189, 255, 1) 55%, rgba(41, 101, 153, 1) 100%);
   z-index: 1;
 }
+
 .cardCenter {
   width: 400px;
   margin-top: 6px;
@@ -176,10 +253,11 @@ body {
 }
 
 .cardCenterContentBlockImg {
-   width: 40px;
-   height: 40px;
-   margin-bottom: 10px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
+
 .cardCenterText p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -187,10 +265,11 @@ body {
   line-height: 22px;
   color: #000000;
 }
+
 .cardCenterContentBlock {
   display: flex;
   align-items: flex-start;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 .cardCenterText {
@@ -266,18 +345,21 @@ body {
   margin-top: 11px;
   transition: all 0.3s;
 }
+
 .cardRight button:hover {
   transition: all 0.3s;
   background: #F97E0D;
   border: 2px solid #296599;
   border-radius: 15px;
 }
+
 .cardRight button:active {
   transition: all 0.3s;
   background: #FEB300;
   border: 2px solid #296599;
   border-radius: 15px;
 }
+
 .mainLeftContentBottomText {
   margin-top: 24px;
   font-weight: 600;
@@ -292,10 +374,12 @@ body {
 .cardCenterTop {
   height: 38px;
 }
+
 .cardCenterTop img {
   width: 100%;
   height: 100%;
 }
+
 .card::before {
   content: "";
   position: absolute;
@@ -322,24 +406,28 @@ body {
 .maingRightContentSection h2 {
   font-weight: 600;
   font-size: 24px;
-line-height: 29px;
+  line-height: 29px;
   color: #000000;
   margin-bottom: 14px;
   position: relative;
   z-index: 2;
 }
+
 .mainLeftContentBottomText b {
   text-transform: uppercase;
 }
+
 .maingRightContentSection p {
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
   color: #000000;
 }
+
 .card:nth-last-of-type(1) {
   margin-bottom: 0;
 }
+
 /* стилизация бегунка в Chrome и Safari */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -454,7 +542,7 @@ input[type=range]::-webkit-slider-runnable-track {
 #demo {
   font-weight: 700;
   font-size: 18px;
-line-height: 22px;
+  line-height: 22px;
   color: #000000;
 }
 
@@ -580,11 +668,12 @@ input[type="checkbox"]:checked+label::before {
 .maingRightContentSection>p {
   font-weight: 400;
   font-size: 12px;
-line-height: 15px;
+  line-height: 15px;
   text-align: center;
   color: #000000;
   margin-top: 11px;
 }
+
 .maingRightContentSectionTopLeftImg {
   height: 22px;
   object-fit: contain;
@@ -643,6 +732,7 @@ line-height: 15px;
   width: 90px;
   margin-right: 18px;
 }
+
 .maingRightContentSectionContent div:nth-of-type(3),
 .maingRightContentSectionContent div:nth-of-type(6) {
   width: 100px;
@@ -961,7 +1051,6 @@ footer .wrapper {
 .footerFlex {
   display: flex;
   align-items: center;
-  margin-left: auto;
 }
 
 
@@ -977,6 +1066,7 @@ footer .wrapper {
 .maingRightContentSectionCard {
   display: none;
 }
+
 .maingRightContentSectionTop1 {
   width: 34px;
   height: 34px;
@@ -1060,6 +1150,7 @@ footer .wrapper {
   overflow: hidden;
   position: relative;
 }
+
 .popupScrollCloses {
   width: 72px;
   height: 72px;
@@ -1072,6 +1163,7 @@ footer .wrapper {
   align-items: center;
   justify-content: center;
 }
+
 .popupScroll {
   width: 332px;
   height: 100%;
@@ -1156,8 +1248,9 @@ footer .wrapper {
   text-align: center;
   color: #000000;
   margin-bottom: 15px;
-  margin-top:0
+  margin-top: 0
 }
+
 .modalWindowContent p {
   font-weight: 400;
   font-size: 12px;
@@ -1166,9 +1259,11 @@ footer .wrapper {
   color: #000000;
   margin-bottom: 24px;
 }
+
 .popupScroll form {
   width: 314px;
 }
+
 .modalFormContainer form input {
   width: 100%;
   background: #FFFFFF;
@@ -1196,10 +1291,12 @@ footer .wrapper {
   color: #000000;
   margin-bottom: 7px;
 }
+
 .modalFormRecap {
   background: #F9F9F9;
   height: 46px;
 }
+
 .modalWindowContent form input::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
@@ -1255,20 +1352,24 @@ footer .wrapper {
   height: 14px !important;
   padding: 0;
 }
+
 .recapcha {
   background: #F9F9F9;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .recapcha img {
   width: auto;
   height: 100%;
   max-width: 100%;
 }
+
 .close-popup2 {
   cursor: pointer;
 }
+
 .inputSub {
   background: #FEB300 !important;
   border: 2px solid #296599 !important;
@@ -1286,6 +1387,7 @@ footer .wrapper {
   line-height: 120.02% !important;
   color: #000000 !important;
 }
+
 .instructionBlockText p {
   font-style: normal;
   font-weight: 400;
@@ -1293,6 +1395,7 @@ footer .wrapper {
   line-height: 30px;
   color: #000000;
 }
+
 .politic {
   margin-top: 34px;
   font-weight: 500;
@@ -1300,9 +1403,11 @@ footer .wrapper {
   line-height: 30px;
   color: #FFFFFF;
 }
+
 .politic b {
   font-weight: 600;
 }
+
 .politic a {
   font-weight: 500;
   font-size: 12px;
@@ -1310,18 +1415,23 @@ footer .wrapper {
   color: #FFFFFF;
   text-decoration: underline;
 }
+
 .footerTop {
   flex-direction: row;
 }
+
 .footerFlex {
   align-items: flex-start;
 }
+
 .footerTopCard img:nth-last-of-type(1) {
   margin-top: 0;
 }
+
 .popupScroll2 {
   display: none;
 }
+
 .popupScroll2.active {
   width: 100%;
   height: 100%;
@@ -1330,13 +1440,23 @@ footer .wrapper {
   align-items: center;
   justify-content: center;
 }
+
 .popupScroll.active {
   display: none;
+}
+
+.popupScrollForm.active {
+  display: none;
+}
+
+.popupScroll2Form.active {
+  display: flex !important;
 }
 
 .politicModalclose {
   z-index: 150;
 }
+
 .politicModal {
   position: fixed;
   top: 0;
@@ -1349,12 +1469,15 @@ footer .wrapper {
   justify-content: center;
   z-index: 9999;
 }
+
 .politicModal.active {
   display: flex !important;
 }
-#politicModal .modalWindowContent  {
+
+#politicModal .modalWindowContent {
   padding-bottom: 50px;
 }
+
 .politicModal h2 {
   font-weight: 600;
   font-size: 30px;
@@ -1364,6 +1487,7 @@ footer .wrapper {
   margin-bottom: 30px;
   margin-top: 30px
 }
+
 .politicScroll {
   height: 100%;
   overflow: scroll;
@@ -1375,85 +1499,487 @@ footer .wrapper {
   line-height: 30px;
   color: #000000;
 }
+
 .politicScrollText {
   padding: 0 50px;
   height: 100%;
 }
+
 .politicScroll b {
   font-weight: 600;
 }
+
 .maingRightContentSection {
   border-radius: 20px;
 }
 
+.burger-icon {
+  width: 58px;
+  height: 46px;
+  border-radius: 10px;
+  background: #D2EFFF;
+  box-shadow: -3px 5px 7px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  display: none;
+  margin-left: auto;
+  margin-right: 32px;
+}
+
+.bar {
+  width: 34px;
+  height: 5px;
+  background-color: #296599;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 5px;
+}
+
+.bar:nth-last-of-type(1) {
+  margin-bottom: 0;
+}
+
+.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.open .bar:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 101, 153, 0.50);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  transform: translateY(-100%);
+  padding: 90px 10px 0 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-menu.open {
+  transform: translateY(0);
+}
+
+.burger-menu-container {
+  max-width: 325px;
+  height: 200px;
+  border-radius: 10px;
+  background: #FFF;
+  padding: 24px 34px 20px 41px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.burger-menu-container::after {
+  content: "";
+  background: url(../img/Vector-burger.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 47px;
+  height: 18px;
+  position: absolute;
+  top: -16px;
+  right: 27px;
+  transform: rotate(-3deg);
+}
+
+.burger-menu-nav li {
+  height: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu-nav {
+  width: 214px;
+}
+
+.burger-menu-nav li a {
+  color: #296599;
+  font-family: 'Jost', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: all 0.5s;
+}
+
+.burger-menu-nav li a:hover {
+  transition: all 0.5s;
+  color: #FEB300;
+}
+
+.close-button-style {
+  display: flex;
+  align-items: center;
+  color: #296599;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 16px;
+  margin-left: auto;
+  gap: 5px;
+}
+
+.mainLeftContentBlog h2 {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 34px;
+}
+
+.mainLeftContentBlogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.mainLeftContentBlogCard {
+  width: 48%;
+  height: 479px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #FFF;
+  box-shadow: -4px 7px 21px 4px rgba(0, 0, 0, 0.10);
+}
+
+.mainLeftContentBlogCardImg {
+  height: 226px;
+}
+
+.mainLeftContentBlogCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainLeftContentBlogCardContent {
+  padding: 17px 16px 30px 16px;
+  box-sizing: border-box;
+}
+
+.mainLeftContentBlogCardContent h2 {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 14px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 58px;
+}
+
+.mainLeftContentBlogCardText {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 30px;
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainLeftContentBlogCardContent a {
+  width: 275.169px;
+  height: 42.619px;
+  border-radius: 5px;
+  border: 1px solid #FEB300;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.023%;
+  margin: 0 auto;
+}
+
+.bannerBlog {
+  margin-bottom: 120px !important;
+  padding-bottom: 0;
+}
+
+.mainLeftContentBlog {
+  margin-right: 37px;
+}
+
+.mainArticleImg {
+  height: 398px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.mainArticleImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainArticleContent h3 {
+  color: #000;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.mainArticleText {
+  color: #000;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.mainArticleText b {
+  font-weight: 700;
+}
+
+.mainArticleContent a {
+  width: 280px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #FEB300;
+  background: #FFF;
+  color: #000;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120.023%;
+}
+
+.bannerBlog {
+  padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1900px) {
+  .headerTop {
+    background-size: cover;
+  }
+
+  .logo-header {
+    left: 27%;
+    transform: translateX(-42%);
+  }
+
+  .header-navigation {
+    transform: translateX(78%);
+    right: 38%;
+  }
+}
 
 @media (max-width: 1279px) {
   .mainLeftContent {
-      width: 688px;
-      margin-right: 0;
+    width: 688px;
+    margin-right: 0;
   }
+
+  .headerTop>.header-navigation {
+    display: none;
+  }
+
+  .headerTop {
+    background-position: 26%;
+    background-size: cover;
+  }
+
+  .footerTop {
+    flex-direction: column;
+  }
+
+  .footerLogo {
+    margin-bottom: 30px;
+  }
+
+  .footerContact {
+    margin-bottom: 24px;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
   .banner {
     max-width: 688px;
     margin: 0 auto;
   }
+
   .maingRightContent {
     display: none;
   }
+
   .card {
     flex-direction: column;
     height: 400px;
   }
+
   .cardLeft {
-      width: 290px;
-      height: 122px;
-      margin-right: 42px;
-      margin-bottom: 27px;
-      margin-top: 35px;
+    width: 290px;
+    height: 122px;
+    margin-right: 42px;
+    margin-bottom: 27px;
+    margin-top: 35px;
   }
+
   .cardCenterTop {
     height: 57px;
     width: 656px;
     margin: 0 auto;
   }
+
   .cardCenter {
     width: 100%;
   }
+
   .cardRight button {
     width: 100%;
     height: 75px;
   }
+
   .cardRight button br {
     display: none;
   }
+
   .cardRight {
     width: 280px;
   }
+
   .cardCenterContent {
     width: 656px;
     margin: 0 auto;
     height: 132px;
     padding: 35px 35px 41px 35px;
   }
+
   .cardCenterContentBlockImg {
     margin-bottom: 0;
     width: 55px;
     height: 55px;
     margin-right: 26px;
   }
+
   .cardRight {
     position: absolute;
     top: 29px;
     right: 39px;
   }
-  .starContainer > span {
+
+  .starContainer>span {
     width: 142px;
     display: flex;
   }
+
   .card::before {
     left: 1%;
     right: 1%;
     width: 98%;
   }
+
   .instruction {
     max-width: 688px;
     height: 580px;
@@ -1461,6 +1987,7 @@ footer .wrapper {
     box-sizing: border-box;
     padding-top: 0;
   }
+
   .instruction .wrapper {
     width: 100%;
     height: 100%;
@@ -1469,53 +1996,67 @@ footer .wrapper {
     background-size: auto;
     background-position: -100px 190px;
   }
+
   .instructionBlock h3 {
     font-size: 12px;
   }
+
   .instructionBlock {
     width: 30%;
   }
+
   .instructionContainer {
     width: 100%;
   }
+
   .mainLeftContentBottomText {
     width: 100%;
     padding-right: 20px;
     box-sizing: border-box;
   }
+
   .jq-star {
     width: 28px !important;
     height: 28px !important;
   }
+
   .jq-star svg {
     width: 28px !important;
     height: 28px !important;
   }
+
   .cardRightFlex>p {
     width: 40px;
     height: 40px;
     font-size: 12px;
     line-height: 120.02%;
   }
+
   .starContainer>p {
     margin-left: 8px;
   }
+
   .cardRight {
     padding-top: 0;
   }
+
   .starContainer>p {
     margin-top: 0;
   }
+
   .cardRightFlex {
     margin-bottom: 23px;
   }
+
   .starContainer {
     flex-direction: row;
     align-items: center;
   }
+
   .cardCenterContentBlock {
     flex-direction: row;
   }
+
   .instruction .wrapper button {
     font-size: 18px;
     line-height: 120.02%;
@@ -1525,54 +2066,78 @@ footer .wrapper {
     border: 1px solid #FEB300;
     border-radius: 5px;
   }
+
   .content {
     max-width: 646px;
     margin: 0 auto;
   }
+
   footer .wrapper {
     max-width: 650px;
   }
+
   .footerFlex {
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
   }
+
   .footerLogoSocial {
     margin-bottom: 57px;
   }
+
   .footerLogoSocial p {
     font-size: 12px;
     line-height: 104.9%;
     margin-bottom: 18px;
   }
+
+  .footerLogoSocial {
+    margin-right: 40px;
+  }
+
+  .footerLogoSocial {
+    margin-bottom: 0;
+  }
+
   .footerTop {
     align-items: flex-start;
     width: 100%;
     padding-bottom: 39px;
     margin-bottom: 44px;
   }
+
   .footerTopCard {
     margin-left: 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
   }
+
   .footerTopCard {
     width: 100%;
   }
+
   .headerBottom:before {
     right: 30px;
   }
+
   .headerBottom::after {
     left: 30px;
   }
+
   .cardRight button {
     margin-top: 0;
   }
+
   .modalWindowContent {
     width: 90%;
   }
+
   .card {
     border-radius: 75px 5px 5px 5px;
   }
+
   .card::before {
     border-radius: 75px 5px 5px 5px;
     left: 0.75%;
@@ -1581,11 +2146,18 @@ footer .wrapper {
     height: 98%;
     top: 1%;
   }
+
   .banner {
     margin-bottom: 35px;
   }
+
   .content {
     padding-bottom: 10px;
+  }
+
+  .logo-header {
+    left: 22%;
+    transform: unset;
   }
 }
 
@@ -1596,233 +2168,344 @@ footer .wrapper {
     padding-top: 15px;
     box-sizing: border-box;
   }
+
+  .logo-header {
+    width: 124.55px;
+    height: 37.127px;
+    top: 17px;
+    left: calc(23% - 25px);
+  }
+
+  .mainArticleImg {
+    height: 200px;
+  }
+
+  .logo-header a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .logo-header a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .burger-menu {
+    padding: 76px 10px 0 0;
+  }
+
   .cardRight button {
     height: 62px;
   }
+
   .cardCenterTop {
     width: 364px;
     height: 39px;
   }
-  .cardRight  {
+
+  .cardRight {
     top: 93px;
   }
+
   .cardCenter {
     margin-top: 95px;
   }
+
   .cardRightFlex>p {
     margin-right: 20px;
   }
+
   .jq-star {
     width: 26px !important;
     height: 26px !important;
   }
+
   .headerBottomContent h1 {
     font-size: 20px;
   }
+
   .headerBottomContent p {
     font-size: 12px;
   }
+
   .contentTextColumRight br {
     display: none;
   }
+
   .footerLogo {
     margin-bottom: 31px;
   }
+
   .footerLogoSocial p {
     width: 70%;
     margin-bottom: 12px;
   }
+
   .footerFlex {
     flex-direction: row;
   }
+
   .footerLogoSocial {
     margin-left: 0;
-    width: 50%;
+    width: 100%;
   }
+
   .footerFlex {
     width: 100%;
   }
+
   .footerTop {
     flex-direction: column;
   }
+
   footer {
     padding: 39px 0;
   }
+
   footer .wrapper {
     max-width: 382px;
   }
+
   .instructionContainer {
     margin-bottom: 20px;
   }
+
   .contentTextColumRight {
     width: 100%;
     margin-top: 20px;
   }
+
   .contentTextColumRight b {
     font-weight: 600;
   }
+
   .contentText {
     margin-bottom: 20px;
   }
+
   .contentTextColumLeft b {
     font-weight: 600;
   }
+
   .contentTextColum {
     flex-direction: column;
   }
+
   .contentTextColumLeft {
     width: 100%;
     margin-right: 0;
   }
+
   .footerTopCard {
     width: 50%;
   }
+
   .politic {
     margin-top: 27px;
     line-height: 140%;
     width: 90%;
   }
+
   .footerBottom p {
     width: 70%;
     margin-bottom: 5px;
   }
+
   .contentText:nth-last-of-type(1) {
     margin-bottom: 0;
   }
+
   .content {
     padding-bottom: 80px;
   }
+
   .footerTop {
     padding-bottom: 29px;
     margin-bottom: 34px;
   }
+
   .footerTopCard img:nth-last-of-type(1) {
     margin-bottom: -7px;
   }
+
   .footerTopCard {
     align-items: flex-end;
   }
+
   .footerFlex {
-    align-items: flex-end;
+    align-items: center;
   }
+
   .footerLogoSocial {
     margin-bottom: 0;
   }
+
   .content {
     max-width: 371px;
   }
+
   .contentText {
     font-size: 12px;
   }
+
   .instruction {
     max-width: 100%;
     width: 382px;
     height: 680px;
     border-radius: 40px;
   }
+
   .instructionBlock {
     margin-bottom: 50px;
   }
+
   .number {
     min-width: 70px;
     min-height: 70px;
     margin-right: 21px;
     margin-bottom: 0;
   }
+
   .instructionBlock {
     width: 100%;
     display: flex;
   }
+
   .instructionContainer {
-    flex-direction: column  ;
+    flex-direction: column;
   }
-  .instruction .wrapper{
+
+  .instruction .wrapper {
     padding: 67px 10px 94px 10px;
   }
+
   .headerBottom {
     overflow: hidden;
   }
+
   .mainLeftContentBottomText {
     margin-top: 28px;
     padding: 0;
   }
+
   .headerBottom:before {
     right: -20px;
   }
+
   .headerBottom::after {
     left: -20px;
   }
+
   .jq-star svg {
     width: 26px !important;
     height: 26px !important;
   }
+
   .cardRightFlex {
     margin-right: auto;
     padding-left: 10px;
   }
+
   .mainLeftContent {
     width: 382px;
     margin: 0 auto;
   }
+
+  .mainLeftContentBlogCardContent a {
+    width: 100%;
+  }
+
+  .mainLeftContentBlog {
+    width: 100%;
+    padding: 0 18px;
+    box-sizing: border-box;
+  }
+
   .cardLeft {
     max-width: 300px;
     margin: 0 auto;
     align-items: baseline;
   }
+
   .cardLeft img {
     width: 100%;
     height: 60px;
   }
+
   .starContainer {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .starContainer>p {
     margin-top: 3px;
   }
+
   .cardRight {
     right: 85px;
     top: 110px;
   }
+
   .cardRightFlex {
     margin-bottom: 15px;
   }
+
   .card::before {
     top: 1%;
     height: 98%;
   }
+
   .cardCenterContent {
     width: 364px;
     padding: 11px 12px 0 12px;
     height: 180px;
   }
+
   .cardCenterContentBlockImg {
     width: 40px;
     height: 40px;
     margin-bottom: 21px;
     margin-right: 0;
   }
+
   .cardCenterContentBlock {
     flex-direction: column;
   }
+
   .headerBottom {
     height: 70px;
   }
+
   h1 {
     font-size: 20px;
-line-height: 112%;
+    line-height: 112%;
   }
+
   .headerTop {
     height: 72px;
   }
+
   .card {
     border-radius: 50px 5px 5px 5px;
   }
+
   .card::before {
     border-radius: 50px 5px 5px 5px;
   }
+
   .footerTopCard {
     justify-content: flex-end;
+  }
+
+  .bannerBlog {
+    margin-bottom: 95px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainLeftContentBlogCard {
+    width: 100%;
   }
 }
 
@@ -1830,189 +2513,236 @@ line-height: 112%;
   .headerBottom:after {
     content: none;
   }
+
   .headerBottom:before {
     content: none;
   }
+
   .card {
     width: 300px;
   }
+
   .cardCenterTop {
     width: 279px;
   }
+
   .card {
     height: 530px;
   }
+
   .cardCenterContentBlock {
     width: 50%;
   }
+
   .cardCenterContent {
     width: 279px;
     flex-wrap: wrap;
     height: 266px;
   }
+
   .cardRight {
     right: 10px;
   }
+
   #politicModal .modalWindowContent {
     height: 462px;
     padding-bottom: 20px;
   }
+
   .politicScrollText {
     padding: 0;
   }
+
   .headerBottomContent h1 {
     font-size: 20px;
-line-height: 112%;
+    line-height: 112%;
   }
+
   .footerTopCard {
     margin-bottom: -5px;
   }
+
   .footerLogoSocial p {
     width: 85%;
   }
+
   .footerLogo p {
     margin-left: 20px;
     font-size: 12px;
   }
+
   .footerLogo a img {
     width: 95px;
   }
+
   .instructionBlock:nth-last-of-type(1) {
     margin-bottom: 20px;
   }
+
   footer .wrapper {
     max-width: 300px;
   }
+
   .content {
     max-width: 280px;
   }
+
   .instructionBlock {
     margin-bottom: 46px;
   }
+
   .number {
     width: 50px;
     height: 50px;
     min-width: 50px;
     min-height: 50px;
   }
+
   .instruction .wrapper {
     padding: 47px 10px 44px 10px;
   }
+
   .instruction {
     width: 300px;
     height: 630px;
   }
+
   .mainLeftContentBottomText {
     padding: 0 10px;
   }
+
   .cardCenter {
     margin-top: 78px;
   }
+
   .cardRight button {
     height: 45px;
   }
+
   .mainLeftContent {
     width: 300px;
   }
+
   .popupScrollCloses {
     width: 41px;
     height: 41px;
   }
+
   .popupScroll form {
     width: 100%;
   }
+
   .popupScroll2 {
     padding: 0 30px;
     box-sizing: border-box;
   }
-  .popupScroll2 > p {
+
+  .popupScroll2>p {
     width: 100% !important;
   }
-  .popupScroll2 > p br {
+
+  .popupScroll2>p br {
     display: none;
   }
+
   .popupScroll {
     width: 90%;
   }
+
   .modalWindowContent p {
     width: 67%;
     margin: 0 auto 20px auto;
   }
+
   .modalWindowContent h2 {
     width: 50%;
     margin: 0 auto 15px auto !important;
   }
+
   .modalWindowContent {
     padding: 26px 15px 46px 15px;
   }
+
   .popupScrollCloses svg {
     width: 10.18px;
     height: 20px;
   }
+
   .modalWindowContent p {
     width: 80%;
   }
+
   .modalWindowContent {
     height: auto;
   }
+
   .modalWindowContent form input:nth-of-type(2) {
     margin-bottom: 0;
   }
+
   .modalFormContent-open {
     width: 262px;
     box-sizing: border-box;
     max-width: 262px;
     height: 58px;
   }
+
   .banner {
     padding-top: 19px;
   }
+
   .cardRight button {
     height: 58px;
   }
+
   .instruction .wrapper button {
     width: 243px;
   }
+
   .footerBottom p {
     width: 100%;
     font-size: 10px;
   }
+
   .footerLogo {
     padding: 0 10px;
   }
-  .politic  {
+
+  .politic {
     line-height: 30px;
   }
+
   .modalWindowContent h2 {
     width: 100%;
   }
+
   .modalWindowContent p {
     width: 100%;
   }
+
   .cardCenterContent {
     height: 287px;
   }
+
   .card::before {
     top: 0.5%;
     height: 99%;
   }
+
   .cardLeft {
     height: 100px;
   }
+
   .popup-content {
     flex-direction: column;
   }
+
   .popup-content p {
     padding-right: 0;
     margin-bottom: 10px;
   }
+
+  .mainLeftContentBlog {
+    width: 100%;
+  }
 }
-
-
-
-
-
-
-
-
-
